@@ -1,4 +1,4 @@
-# merchantapplet
+# printerapplet
 
 > A Mpvue project
 

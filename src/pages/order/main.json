@@ -1,0 +1,14 @@
+{
+ "usingComponents": {
+  "van-icon": "/static/vant-weapp/icon/index",
+  "van-popup": "/static/vant-weapp/popup/index",
+  "van-radio": "/static/vant-weapp/radio/index",
+  "van-radio-group": "/static/vant-weapp/radio-group/index",
+  "van-row": "/static/vant-weapp/row/index",
+  "van-col": "/static/vant-weapp/col/index",
+  "van-checkbox": "/static/vant-weapp/checkbox/index",
+  "van-dialog": "/static/vant-weapp/dialog/index",
+  "van-action-sheet": "/static/vant-weapp/action-sheet/index",
+  "van-notice-bar": "/static/vant-weapp/notice-bar/index"
+ }
+}

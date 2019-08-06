@@ -1,9 +1,0 @@
-{
-  "usingComponents": {
-    "van-row": "/static/vant-weapp/row/index",
-    "van-col": "/static/vant-weapp/col/index",
-    "van-icon": "/static/vant-weapp/icon/index",
-    "van-card": "/static/vant-weapp/card/index"
-  },
-  "navigationBarTitleText": "余额提现" 
-}

@@ -1,8 +1,5 @@
 {
-	"description": "项目配置文件",
-	"packOptions": {
-		"ignore": []
-	},
+	"description": "项目配置文件。",
 	"setting": {
 		"urlCheck": false,
 		"es6": true,
@@ -12,16 +9,10 @@
 		"autoAudits": false,
 		"checkInvalidKey": true
 	},
-	"compileType": "miniprogram",
-	"libVersion": "2.7.1",
-	"appid": "wx70f125dfb30a53d7",
-	"projectname": "merchantApplet",
 	"miniprogramRoot": "dist/wx/",
-	"cloudfunctionTemplateRoot": "",
-	"debugOptions": {
-		"hidedInDevtools": []
-	},
-	"scripts": {},
+	"compileType": "miniprogram",
+	"appid": "wxcfc49bce3dd4ab5f",
+	"projectname": "printerApplet",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
@@ -38,85 +29,66 @@
 			"list": []
 		},
 		"game": {
+			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": 10,
+			"current": 7,
 			"list": [
 				{
 					"id": 0,
-					"name": "注册",
-					"pathName": "pages/signin/main",
-					"query": "",
-					"scene": null
+					"name": "test",
+					"pathName": "pages/order/main",
+					"query": "adminId=14",
+					"scene": 1011
 				},
 				{
 					"id": 1,
-					"name": "第一次设置",
-					"pathName": "pages/firstSetting/main",
+					"name": "个人页",
+					"pathName": "pages/personal/main",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": 2,
-					"name": "账户",
-					"pathName": "pages/account/main",
-					"query": "adminId=1",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "统计页",
-					"pathName": "pages/statistics/main",
+					"name": "print",
+					"pathName": "pages/printSuccess/main",
 					"query": "",
-					"scene": null
+					"scene": 1047
 				},
 				{
 					"id": 3,
-					"name": "奖励页",
-					"pathName": "pages/award/main",
-					"query": "",
+					"name": "商家信息",
+					"pathName": "pages/shopInformation/main",
+					"query": "adminId=2",
 					"scene": null
 				},
 				{
 					"id": 4,
-					"name": "收款记录",
-					"pathName": "pages/records/main",
+					"name": "打印",
+					"pathName": "pages/printUpload/main",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "每日收款",
-					"pathName": "pages/incomes/main",
-					"query": "",
+					"name": "test",
+					"pathName": "pages/printSuccess/main",
+					"query": "adminId=2",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "price",
-					"pathName": "pages/priceSetting/main",
-					"query": "",
+					"name": "商家列表",
+					"pathName": "pages/shopList/main",
+					"query": "adminId=14",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "注册",
-					"pathName": "pages/signin/main",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "远程打印",
-					"pathName": "pages/farList/main",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "远程打印",
-					"pathName": "pages/farList/main",
+					"name": "商家信息",
+					"pathName": "pages/shopMap/main",
+					"query": "adminId=2",
 					"scene": null
 				}
 			]

@@ -1,47 +1,63 @@
 <script>
-import { login } from '@/utils/api'
+import { login, getFiles } from '@/utils/login'
 import store from '@/stores/store'
 
 export default {
   created () {
-    const adminId = mpvue.getStorageSync('adminId')
-    if (adminId) {
-      console.log('自动登陆, id: ' + adminId)
-      store.state.adminId = adminId
-    } else {
-      // 如果缓存中没有，则调用登陆方法
-      login().then(function (res) {
-        if (res.flag) {
-          // 登陆成功
-          let adminId = res.data.adminId
-          // 存储admin信息到全局变量
-          // store.state.adminType = res.data.adminType
-          store.commit('saveDataAfter', res.data.adminType)
-          store.commit('saveDataAfterLogin', {adminId: adminId, shopName: res.data.shopName, everyNewAward: res.data.everyNewAward, account: res.data.account, todayCount: res.data.todayCount})
-          // 存储adminId到缓存
-          mpvue.setStorageSync('adminId', adminId)
-          console.log('登陆成功 adminId: ' + adminId)
-        } else {
-          // 登陆失败，说明不是商家，跳转到注册页面
-          wx.switchTab({url: '/pages/signin/main'})
-        }
-      })
-    }
-  },
-  onLaunch () {
-    wx.hideTabBar({
-      // 隐藏tabbar
-      fail: function () {
-        // 做了个延时重试，作为保底
-        setTimeout(function () {
-          wx.hideTabBar()
-        }, 500)
+    // 设置服务器ip地址
+    // store.commit('setURL', 'https://www.morningxy.com')
+    store.commit('setURL', 'http://192.168.2.116:8080')
+    // store.commit('setURL', 'http://127.0.0.1')
+    // 小程序启动时用户登陆
+    // wx.checkSession({
+    //   success () {
+    //     // session_key 未过期，并且在本生命周期一直有效
+    //     // 获取缓存中的用户id
+    try {
+      const userId = mpvue.getStorageSync('userId')
+      if (userId && userId > 0) {
+        // 将userId存储为全局变量
+        store.commit('setUserId', userId)
+        // console.log('userId存在于缓存, userId:' + userId)
+        // 获取用户文件并保存于全局存储中
+        getFiles()
+      } else {
+        console.log('userId未找到, 重新登录')
+        // 重新登陆
+        login()
       }
-    })
+    } catch (e) {
+      console.log(e)
+      login()
+    }
+    // }
+    //   fail () {
+    //     // session_key 已经失效，需要重新执行登录流程
+    //     // 重新登录
+    //     login()
+    //   }
+    // })
   }
 }
 </script>
+
 <style>
+@import './assets/styles/iconfont.css';
+@import './assets/styles/iconfont1.css';
+/* @import './assets/styles/iconfont2.css'; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+page {
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
 .container {
   height: 100%;
   display: flex;
@@ -57,8 +73,5 @@ export default {
   -moz-transition: width 2s;
   -webkit-transition: width 2s;
   -o-transition: width 2s;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 </style>

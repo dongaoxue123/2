@@ -1,31 +1,27 @@
 {
   "pages": [
-    "pages/account/main",
-    "pages/signin/main",
-    "pages/firstSetting/main",
-    "pages/statistics/main",
-    "pages/award/main",
-    "pages/records/main",
-    "pages/incomes/main",
-    "pages/balanceCashOut/main",
-    "pages/shopSetting/main",
-    "pages/priceSetting/main",
-    "pages/userSetting/main",
-    "pages/details/main",
-    "pages/withdrawalsRecord/main",
-    "pages/setPrinter/main",
-    "pages/farList/main",
-    "pages/farListSetting/main"
+    "pages/file/main",
+    "pages/personal/main",
+    "pages/upload/main",
+    "pages/order/main",
+    "pages/printHistory/main",
+    "pages/map/main",
+    "pages/fileUpload/main",
+    "pages/printUpload/main",
+    "pages/printSuccess/main",
+    "pages/shopInformation/main",
+    "pages/shopList/main",
+    "pages/shopMap/main"
   ],
   "permission": {
     "scope.userLocation": {
-      "desc": "您的位置信息将用于用户端打印店地图的显示"
+    "desc": "允许获取您的地理位置"
     }
   },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ededed",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "京致闪印",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -34,16 +30,29 @@
     "selectedColor": "#333",
     "borderStyle": "white",
     "list": [{
-      "text": "首页",
-      "pagePath": "pages/account/main"
-    }, {
-      "text": "注册",
-      "pagePath": "pages/signin/main"
-    }, {
-      "text": "设置",
-      "pagePath": "pages/firstSetting/main"
+      "text": "文件",
+      "pagePath": "pages/file/main",
+      "iconPath": "static/tabs/documents.png",
+      "selectedIconPath": "static/tabs/documents-active.png"
+    },
+    {
+      "text": "上传",
+      "pagePath": "pages/fileUpload/main",
+      "iconPath": "static/tabs/upload.png",
+      "selectedIconPath": "static/tabs/upload-active.png"
+    },
+    {
+      "text": "发现",
+      "pagePath": "pages/map/main",
+      "iconPath": "static/tabs/printer.png",
+      "selectedIconPath": "static/tabs/printer-active.png"
+    },    
+    {
+      "text": "我的",
+      "pagePath": "pages/personal/main",
+      "iconPath": "static/tabs/personal.png",
+      "selectedIconPath": "static/tabs/personal-active.png"
     }],
     "position": "bottom"
-  },
-  "debug": false
+  }
 }
