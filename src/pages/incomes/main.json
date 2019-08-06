@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "van-row": "/static/vant-weapp/row/index",
+    "van-col": "/static/vant-weapp/col/index",
+    "van-icon": "/static/vant-weapp/icon/index",
+    "van-card": "/static/vant-weapp/card/index",
+    "van-button": "/static/vant-weapp/button/index"
+  },
+  "navigationBarTitleText": "收款记录",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

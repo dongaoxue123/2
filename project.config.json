@@ -1,0 +1,125 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.1",
+	"appid": "wx70f125dfb30a53d7",
+	"projectname": "merchantApplet",
+	"miniprogramRoot": "dist/wx/",
+	"cloudfunctionTemplateRoot": "",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"scripts": {},
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 10,
+			"list": [
+				{
+					"id": 0,
+					"name": "注册",
+					"pathName": "pages/signin/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "第一次设置",
+					"pathName": "pages/firstSetting/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "账户",
+					"pathName": "pages/account/main",
+					"query": "adminId=1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "统计页",
+					"pathName": "pages/statistics/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "奖励页",
+					"pathName": "pages/award/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "收款记录",
+					"pathName": "pages/records/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "每日收款",
+					"pathName": "pages/incomes/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "price",
+					"pathName": "pages/priceSetting/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "注册",
+					"pathName": "pages/signin/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "远程打印",
+					"pathName": "pages/farList/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "远程打印",
+					"pathName": "pages/farList/main",
+					"scene": null
+				}
+			]
+		}
+	}
+}

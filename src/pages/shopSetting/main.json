@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-field": "/static/vant-weapp/field/index",
+    "van-button": "/static/vant-weapp/button/index",
+    "van-cell": "/static/vant-weapp/cell/index",
+    "van-cell-group": "/static/vant-weapp/cell-group/index",
+    "van-switch-cell": "/static/vant-weapp/switch-cell/index",
+    "van-icon": "/static/vant-weapp/icon/index"
+  },
+  "navigationBarTitleText": "店铺设置" 
+}

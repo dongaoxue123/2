@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "van-field": "/static/vant-weapp/field/index",
+    "van-button": "/static/vant-weapp/button/index",
+    "van-cell": "/static/vant-weapp/cell/index",
+    "van-cell-group": "/static/vant-weapp/cell-group/index",
+    "van-switch-cell": "/static/vant-weapp/switch-cell/index",
+    "van-icon": "/static/vant-weapp/icon/index",
+    "van-tab": "/static/vant-weapp/tab/index",
+    "van-tabs": "/static/vant-weapp/tabs/index"
+  },
+  "navigationBarTitleText": "远程打印" 
+}

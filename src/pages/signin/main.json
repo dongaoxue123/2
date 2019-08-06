@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-field": "/static/vant-weapp/field/index",
+    "van-button": "/static/vant-weapp/button/index",
+    "van-cell-group": "/static/vant-weapp/cell-group/index"
+  },
+    "navigationBarTitleText": "商家注册" 
+}

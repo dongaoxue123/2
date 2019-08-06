@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/account/main",
+    "pages/signin/main",
+    "pages/firstSetting/main",
+    "pages/statistics/main",
+    "pages/award/main",
+    "pages/records/main",
+    "pages/incomes/main",
+    "pages/balanceCashOut/main",
+    "pages/shopSetting/main",
+    "pages/priceSetting/main",
+    "pages/userSetting/main",
+    "pages/details/main",
+    "pages/withdrawalsRecord/main",
+    "pages/setPrinter/main",
+    "pages/farList/main",
+    "pages/farListSetting/main"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于用户端打印店地图的显示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ededed",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "backgroundColor": "#fafafa",
+    "selectedColor": "#333",
+    "borderStyle": "white",
+    "list": [{
+      "text": "首页",
+      "pagePath": "pages/account/main"
+    }, {
+      "text": "注册",
+      "pagePath": "pages/signin/main"
+    }, {
+      "text": "设置",
+      "pagePath": "pages/firstSetting/main"
+    }],
+    "position": "bottom"
+  },
+  "debug": false
+}

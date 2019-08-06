@@ -1,0 +1,16 @@
+{
+    "usingComponents": {
+        "van-field": "/static/vant-weapp/field/index",
+        "van-button": "/static/vant-weapp/button/index",
+        "van-cell": "/static/vant-weapp/cell/index",
+        "van-cell-group": "/static/vant-weapp/cell-group/index",
+        "van-switch-cell": "/static/vant-weapp/switch-cell/index",
+        "van-icon": "/static/vant-weapp/icon/index",
+        "van-radio": "/static/vant-weapp/radio/index",
+        "van-popup": "/static/vant-weapp/popup/index",
+        "van-tab": "/static/vant-weapp/tab/index",
+        "van-tabs": "/static/vant-weapp/tabs/index",
+        "van-toast": "/static/vant-weapp/toast/index"
+    },
+    "navigationBarTitleText": "价格设置"
+}
