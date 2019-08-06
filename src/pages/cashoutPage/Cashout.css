@@ -1,0 +1,13 @@
+.all-records{
+    background:#fff;
+    border:1px solid #d9d9d9;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    padding:4px 10px;
+    border-radius: 4px;
+}
+
+.ant-table-pagination.ant-pagination {
+    text-align: center;
+    margin: 16px 0;
+}

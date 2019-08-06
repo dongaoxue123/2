@@ -1,0 +1,26 @@
+.labol{
+  margin-top: 30px;
+  border: 1px solid #eee;
+  padding: 20px;
+}
+.avatar-uploader > .ant-upload {
+  width: 128px;
+  height: 128px;
+}
+.button{
+  margin:  0 auto;
+  margin-top: 10px;
+}
+.but{
+  text-align: center;
+  margin-top: 20px;
+}
+/* .ant-form-item-control{
+  line-height: 0;
+  height: 20%;
+} */
+.listname{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

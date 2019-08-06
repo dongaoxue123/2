@@ -1,0 +1,30 @@
+.header{
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+}
+.pic{
+  text-align: center;
+  width: 100%;
+}
+.content{
+  text-align:center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+.paper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-down{
+  color: #999;
+  margin-right:10px;
+  cursor: pointer;
+}
+/* .hand{
+  cursor:*;
+} */

@@ -1,0 +1,77 @@
+.components-form-demo-normal-login .login-form {
+  max-width: 100px;
+}
+#components-form-demo-normal-login .login-form-forgot {
+  float: right;
+}
+#components-form-demo-normal-login .login-form-button {
+  width: 100%;
+}
+.login{
+  margin:5% auto 0;
+  overflow: hidden;
+  width:320px;
+}
+.title_name{
+  font-size: 30px;
+    color:#333;
+    font-weight: 1000;
+    /* text-shadow:2px 2px 2px #333; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center
+}
+.login_wrap{
+  text-align: center;
+  min-height:250px;
+  margin-top:10%;
+  background: #fff;
+  /* padding-bottom:5px; */
+  overflow: hidden;
+}
+.title{
+  margin-top:7%;
+  margin-bottom:7%;
+  font-size:18px;
+  color:#999;
+}
+.input_code{
+  border:1px solid #ddd;
+  /* display: inline-block */
+  width: 94%;
+  height:100%;
+  border-radius: 3px;
+  /* text-indent: 10px; */
+  font-size: 12px
+}
+.input_code::-webkit-input-placeholder{
+  color:#bbb;
+}
+.check_code{
+  padding:0;
+  color:#777;
+  width:40%;
+}
+.register{
+  float:right;
+}
+.dis_register{
+  visibility:hidden;
+}
+
+.login-form {
+  width: 70%;
+  margin: 20px auto;
+  position: relative;
+ }
+.example {
+  width:100%;
+  height:100%;
+  position: absolute;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top:0;
+  left: 0;
+}

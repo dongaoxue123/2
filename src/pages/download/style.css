@@ -1,0 +1,18 @@
+.type{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: 1px solid #eee; */
+  /* line-height: 4; */
+}
+.type_{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* line-height: 4; */
+  /* border-bottom: 1px solid #eee; */
+}
+  .date{
+    color: #999;
+    font-size: 12px;
+  }

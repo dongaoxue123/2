@@ -1,0 +1,31 @@
+.card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction:  row;
+  flex-wrap: wrap;
+  border: 1px solid #fff;
+  padding-right: 20px;
+}
+.sort{
+  border: 1px solid #eee;
+  padding: 28px;
+  padding-left: 40px;
+  padding-right: 48px;
+}
+.button{
+  display: flex;
+  justify-content:center;
+  align-items: center;  
+}
+.shop{
+  display: flex;
+  justify-content:space-between;
+  align-items: center; 
+}
+/* .cards{
+  float: left;
+} */
+.data_choose{
+  margin-bottom: 10px;
+}

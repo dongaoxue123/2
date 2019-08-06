@@ -1,42 +1,23 @@
-// http://eslint.org/docs/user-guide/configuring
-
 module.exports = {
-  root: true,
-  parser: 'babel-eslint',
-  parserOptions: {
-    sourceType: 'module'
+  "env": {
+    "browser": true,
+    "es6": true
   },
-  env: {
-    browser: false,
-    node: true,
-    es6: true
+  "extends": "eslint:recommended",
+  "globals": {
+  "Atomics": "readonly",
+  "SharedArrayBuffer": "readonly"
   },
-  // https://github.com/standard/standard/blob/master/docs/RULES-en.md
-  extends: 'standard',
-  // required to lint *.vue files
-  plugins: [
-    'html'
-  ],
-  // add your custom rules here
-  'rules': {
-    // allow paren-less arrow functions
-    'arrow-parens': 0,
-    // allow async-await
-    'generator-star-spacing': 0,
-    // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
+  "parserOptions": {
+  "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
   },
-  globals: {
-    App: true,
-    Page: true,
-    wx: true,
-    swan: true,
-    tt: true,
-    my: true,
-    getApp: true,
-    getPage: true,
-    requirePlugin: true,
-    mpvue: true,
-    mpvuePlatform: true
+  "plugins": [
+      "react"
+    ],
+  "rules": {
   }
-}
+};
